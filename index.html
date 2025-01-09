@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R + G ♡</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="1x1.png">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <img src="usS2.jpg" alt="Couple Image" width="35%">
+            <br><br>
+            <h1><span id="partner1">Richard</span> & <span id="partner2">Giovana</span></h1>
+            <p class="message" id="message">Minha baixinha, agradeço todos os dias por ter você ao meu lado, por ter a vida mudada por uma mulher tão incrível quanto você,
+                que me faz ficar mais apaixonado a cada dia que passa.. conte comigo para tudo, sempre, e que todos nossos objetivos em comum se tornem realidade no futuro!
+            Você é um anjo que tive o prazer de conhecer, e prometo cuidar de você para sempre.<br>Eu te amo, Giovana 🫶🏻</p>
+        </div>
+
+        <div class="timer text-center">
+            <h2>Juntos há</h2>
+            <div class="time-box">
+                <div>
+                    <h3 id="years">00</h3>
+                    <p>anos</p>
+                </div>
+                <div>
+                    <h3 id="months">00</h3>
+                    <p>meses</p>
+                </div>
+                <div>
+                    <h3 id="days">00</h3>
+                    <p>dias</p>
+                </div>
+                <div>
+                    <h3 id="hours">00</h3>
+                    <p>horas</p>
+                </div>
+                <div>
+                    <h3 id="minutes">00</h3>
+                    <p>minutos</p>
+                </div>
+                <div>
+                    <h3 id="seconds">00</h3>
+                    <p>segundos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="audio-player">
+            <button id="play-button" title="Reproduzir música">
+                <img src="play.svg" alt="Play">
+            </button>
+            <button id="pause-button" title="Pausar música" style="display:none;">
+                <img src="play.svg" alt="Pause" style="transform: rotate(90deg);">
+            </button>
+
+            <div class="volume-control">
+                <img src="volume-1.svg" alt="Volume">
+                <input title="Controlar volume" type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+            </div>
+
+            <audio id="audio" src="lovely.mp3"></audio>
+        </div>
+
+        <div id="hearts-background"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
