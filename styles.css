@@ -1,3 +1,4 @@
+/* Estilos padrão para dispositivos grandes */
 body {
     background-color: #121212;
     color: #fff;
@@ -48,7 +49,7 @@ body {
     flex-wrap: wrap;
 }
 
-.time-box div {
+.timer .time-box div {
     text-align: center;
     padding: 15px;
     background-color: #292929;
@@ -57,7 +58,7 @@ body {
     width: 80px;
 }
 
-.time-box div h3 {
+.timer .time-box div h3 {
     font-size: 2rem;
     margin-bottom: 5px;
     color: #ff3b3b;
@@ -103,4 +104,46 @@ body {
     height: 100vh;
     pointer-events: none;
     z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .timer h2 {
+        font-size: 1.2rem;
+    }
+
+    .timer .time-box div {
+        width: 60px;
+    }
+
+    .audio-player img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .volume-control input[type="range"] {
+        width: 80px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .timer h2 {
+        font-size: 1.3rem;
+    }
+
+    .audio-player img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .volume-control input[type="range"] {
+        width: 90px;
+    }
 }
