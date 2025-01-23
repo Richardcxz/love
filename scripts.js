@@ -52,7 +52,7 @@ window.addEventListener("resize", () => {
 
 initHearts();
 
-const startDate = new Date('2024-12-22T00:00:00');
+const startDate = new Date('2024-12-23T00:00:00');
 
 function updateTimer() {
     const now = new Date();
